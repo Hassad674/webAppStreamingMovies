@@ -14,6 +14,14 @@ const Header = () => {
               Accueil
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/coups-de-coeur"
+              className={(nav) => (nav.isActive ? "nav-active" : "")}
+            >
+              Coups de coeur
+            </NavLink>
+          </li>
         </ul>
       </nav>
       <h1>React Movies</h1>

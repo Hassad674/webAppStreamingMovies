@@ -1,5 +1,6 @@
 import React from "react";
 import Home from "./pages/Home";
+import LikePage from "./pages/LikePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/coups-de-coeur" element={<LikePage />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
@@ -14,3 +16,4 @@ const App = () => {
 };
 
 export default App;
+
